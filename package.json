@@ -1,0 +1,15 @@
+{
+  "name": "test-node",
+  "version": "0.0.1",
+  "dependencies": {
+    "formidable":">= 0.x.x",
+    "http":">= 0.x.x",
+    "url":">= 0.x.x",
+    "fs":">= 0.x.x",
+    "querystring":">= 0.x.x"
+  },
+  "engines": {
+    "node":"0.8.x",
+    "npm":"1.1.x"
+  }
+}
