@@ -6,7 +6,8 @@
     "http":">= 0.x.x",
     "url":">= 0.x.x",
     "fs":">= 0.x.x",
-    "querystring":">= 0.x.x"
+    "querystring":">= 0.x.x",
+    "pg": "0.5.4"
   },
   "engines": {
     "node":"0.8.x",
