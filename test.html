@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+    <div id="inputs">
+      <input id="txt" type="text" value="byahh" />
+    </div>
+    <p></p>
+    <script>
+      $("input").keyup(function() {
+        var value = $(this).val();
+        $("p").text(value);
+      }).keyup();
+    </script>
+    
+  </body>
+</html>
+
