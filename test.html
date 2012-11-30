@@ -1,19 +1,32 @@
 <html>
   <head>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style type=text/css>
+      .black { COLOR: black }
+      .red {COLOR: red }
+      .other {COLOR: #800080 }
+    </style>
   </head>
   <body>
     <div id="inputs">
       <input id="txt" type="text" value="byahh" />
     </div>
-    <p></p>
+    <p><span class="red" id="text"></span></p>
     <script>
-      $("input").keyup(function() {
-        var value = $(this).val();
-        $("p").text(value);
-      }).keyup();
+      var count = 0;
+      $(document).ready(function(){
+        $("input").keypress(function(event) {
+          var value = $(this).val();
+          $("span#text").append("<span>"+ String.fromCharCode(event.which) + "</span>");
+          if(count % 2 == 0){
+            $("span#text span:last").addClass("red");
+          } else {
+            $("span#text span:last").addClass("other");
+          } count = count + 1;
+        }).keypress();
+      });
     </script>
-    
+    <p></p> 
   </body>
 </html>
 
