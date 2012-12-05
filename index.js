@@ -4,6 +4,8 @@ var requestHandlers = require("./requestHandlers");
 
 var handle = {}
 handle["/"] = requestHandlers.start;
+handle["/add"] = requestHandlers.add;
+handle["/creategroup"] = requestHandlers.creategroup;
 handle["/start"] = requestHandlers.start;
 handle["/upload"] = requestHandlers.upload;
 handle["/show"] = requestHandlers.show;
