@@ -18,8 +18,10 @@ function start(response) {
     '</form>'+
     '</body>'+
     '</html>';
-  body = "\"test\"";
-    response.writeHead(200, {"Content-Type": "text/html"});
+  body = '\'{"body":"test"}\'';
+  body = 'parse("i give up")';
+
+    response.writeHead(200, {"Content-Type": "application/json"});
     response.write(body);
     response.end();
 }
